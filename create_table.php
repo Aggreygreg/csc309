@@ -1,4 +1,3 @@
-
 <?php
     $server = 'localhost'; // 127.0.0.1
     $username = 'root';
@@ -18,6 +17,8 @@
         id INT AUTO_INCREMENT PRIMARY KEY,
         firstname VARCHAR(30) NOT NULL,
         lastname VARCHAR(30) NOT NULL,
+        gender VARCHAR(1) NOT NULL,
+        date_of_birth date() NOT NULL,
         email VARCHAR(50) NOT NULL UNIQUE
     )';
 
